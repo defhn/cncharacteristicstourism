@@ -6,6 +6,8 @@ import { ArrowLeft, Search, Calendar, User, Eye, ArrowRight, MapPin, Camera, Mou
 import Link from "next/link"
 import Image from "next/image"
 import { getAllBlogPosts } from '@/lib/supabase'
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 
 
@@ -59,33 +61,16 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5 text-amber-600" />
-              <span className="text-amber-600 hover:text-amber-700">返回首页</span>
-            </Link>
-            <div className="flex items-center space-x-2">
-              <Mountain className="h-6 w-6 text-amber-600" />
-              <span className="text-xl font-bold text-gray-900">旅行博客</span>
-            </div>
-            <Link href="/blog/create">
-              <Button className="bg-amber-600 hover:bg-amber-700 text-white">写游记</Button>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="relative h-[300px] bg-gradient-to-r from-amber-50 to-red-50">
         <div className="absolute inset-0 bg-[url('/chinese-traditional-architecture-with-mountains.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">中华文化旅行博客</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Chinese Culture Travel Blog</h1>
             <p className="text-lg text-gray-700 mb-6">
-              分享真实的旅行体验，记录美好的文化时光，为您的中华文化之旅提供灵感和指导
+              Share authentic travel experiences, record beautiful cultural moments, and provide inspiration and guidance for your Chinese cultural journey
             </p>
             <div className="flex items-center space-x-4">
               <div className="relative flex-1 max-w-md">
@@ -304,6 +289,8 @@ export default async function BlogPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

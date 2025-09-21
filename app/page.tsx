@@ -3,55 +3,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { MapPin, Clock, Users, Star, ArrowRight, Camera, Mountain, Building2, Palette } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <Mountain className="h-8 w-8 text-amber-600" />
-              <span className="text-xl font-bold text-gray-900">中华之旅</span>
-              <span className="text-sm text-gray-600">China Journey</span>
-            </div>
-
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-gray-900 hover:text-amber-600 font-medium">
-                首页
-              </Link>
-              <div className="relative group">
-                <button className="text-gray-700 hover:text-amber-600 font-medium flex items-center">
-                  旅行计划 <ArrowRight className="ml-1 h-4 w-4" />
-                </button>
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <Link href="/plans/3-day" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">
-                    3天经典之旅
-                  </Link>
-                  <Link href="/plans/5-day" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">
-                    5天高端之旅
-                  </Link>
-                  <Link href="/plans/custom" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">
-                    定制旅行计划
-                  </Link>
-                  <Link href="/planner" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50">
-                    智能规划师
-                  </Link>
-                </div>
-              </div>
-              <Link href="/pricing" className="text-gray-700 hover:text-amber-600 font-medium">
-                价格服务
-              </Link>
-              <Link href="/blog" className="text-gray-700 hover:text-amber-600 font-medium">
-                旅行博客
-              </Link>
-            </div>
-
-            <Button className="bg-amber-600 hover:bg-amber-700 text-white">开始定制</Button>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="relative h-[600px] bg-gradient-to-r from-amber-50 to-red-50 overflow-hidden">
@@ -59,17 +17,17 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-6 text-balance">
-              探索中华文化之美
-              <span className="block text-3xl text-amber-600 mt-2">Discover the Beauty of Chinese Culture</span>
+              Discover the Beauty of Chinese Culture
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              从义乌国际商贸城的繁华，到横店影视城的梦幻，再到景德镇的千年瓷韵和庐山的自然奇观，
-              为您和家人打造难忘的中华文化之旅。
+              From the bustling Yiwu International Trade City to the magical Hengdian Film Studios,
+              from the thousand-year porcelain heritage of Jingdezhen to the natural wonders of Lushan Mountain,
+              we create unforgettable Chinese cultural journeys for you and your family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/planner">
                 <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8">
-                  立即开始旅程
+                  Start Your Journey
                 </Button>
               </Link>
               <Link href="/plans/3-day">
@@ -78,7 +36,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-amber-600 text-amber-600 hover:bg-amber-50 bg-transparent"
                 >
-                  查看旅行计划
+                  View Travel Plans
                 </Button>
               </Link>
             </div>
@@ -90,8 +48,8 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">精选目的地</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">四大特色目的地，每一处都承载着深厚的中华文化底蕴</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Destinations</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Four distinctive destinations, each carrying profound Chinese cultural heritage</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -276,80 +234,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Mountain className="h-6 w-6 text-amber-500" />
-                <span className="text-lg font-bold">中华之旅</span>
-              </div>
-              <p className="text-gray-400 text-sm">专注于中华文化旅行体验，为您和家人创造难忘的旅行回忆。</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">旅行计划</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="/plans/3-day" className="hover:text-white">
-                    3天经典之旅
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/plans/5-day" className="hover:text-white">
-                    5天高端之旅
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/plans/custom" className="hover:text-white">
-                    定制旅行计划
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">目的地</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="/destinations/yiwu" className="hover:text-white">
-                    义乌国际商贸城
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/destinations/hengdian" className="hover:text-white">
-                    横店影视城
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/destinations/jingdezhen" className="hover:text-white">
-                    景德镇
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/destinations/lushan" className="hover:text-white">
-                    庐山
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">联系我们</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>电话: +86 400-123-4567</li>
-                <li>邮箱: info@chinajourney.com</li>
-                <li>微信: ChinaJourney2024</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 中华之旅 China Journey. 保留所有权利。</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

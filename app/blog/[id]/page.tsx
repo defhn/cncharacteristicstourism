@@ -7,6 +7,8 @@ import Image from "next/image"
 import { notFound } from 'next/navigation'
 import { Metadata } from 'next'
 import { getBlogPost } from '@/lib/supabase'
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 // Mock blog post data - in a real app, this would come from your database
 const blogPost = {
@@ -130,27 +132,7 @@ export default async function BlogPostPage({ params }: BlogDetailPageProps) {
   // 使用数据库中的数据，如果没有则使用默认值
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/blog" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5 text-amber-600" />
-              <span className="text-amber-600 hover:text-amber-700">返回博客</span>
-            </Link>
-            <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm">
-                <Share2 className="h-4 w-4 mr-2" />
-                分享
-              </Button>
-              <Button variant="outline" size="sm">
-                <Heart className="h-4 w-4 mr-2" />
-                收藏
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Article Header */}
       <section className="py-12 bg-white">
@@ -339,6 +321,8 @@ export default async function BlogPostPage({ params }: BlogDetailPageProps) {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }
