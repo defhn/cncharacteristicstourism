@@ -56,18 +56,18 @@ export default function HomePage() {
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/yiwu-international-trade-city-modern-buildings.jpg')] bg-cover bg-center"></div>
-                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">商贸之都</Badge>
+                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">Trade Hub</Badge>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Building2 className="h-5 w-5 text-amber-600 mr-2" />
-                  <h3 className="font-bold text-lg">义乌国际商贸城</h3>
+                  <h3 className="font-bold text-lg">Yiwu International Trade City</h3>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">世界最大的小商品批发市场，感受全球贸易的脉搏</p>
+                <p className="text-gray-600 text-sm mb-4">World's largest wholesale market for small commodities, feel the pulse of global trade</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-sm text-gray-500">
                     <MapPin className="h-4 w-4 mr-1" />
-                    浙江义乌
+                    Yiwu, Zhejiang
                   </div>
                   <ArrowRight className="h-4 w-4 text-amber-600 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -77,18 +77,18 @@ export default function HomePage() {
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48 bg-gradient-to-br from-purple-100 to-pink-200 rounded-t-lg overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/hengdian-film-studios-movie-sets-traditional-chine.jpg')] bg-cover bg-center"></div>
-                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">影视基地</Badge>
+                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">Film Studios</Badge>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Camera className="h-5 w-5 text-amber-600 mr-2" />
-                  <h3 className="font-bold text-lg">横店影视城</h3>
+                  <h3 className="font-bold text-lg">Hengdian Film Studios</h3>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">中国好莱坞，体验古装剧拍摄现场的魅力</p>
+                <p className="text-gray-600 text-sm mb-4">China's Hollywood, experience the charm of ancient costume drama filming sites</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-sm text-gray-500">
                     <MapPin className="h-4 w-4 mr-1" />
-                    浙江横店
+                    Hengdian, Zhejiang
                   </div>
                   <ArrowRight className="h-4 w-4 text-amber-600 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -98,18 +98,18 @@ export default function HomePage() {
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48 bg-gradient-to-br from-orange-100 to-red-200 rounded-t-lg overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/jingdezhen-porcelain-pottery-traditional-chinese-c.jpg')] bg-cover bg-center"></div>
-                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">瓷都文化</Badge>
+                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">Porcelain Capital</Badge>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Palette className="h-5 w-5 text-amber-600 mr-2" />
-                  <h3 className="font-bold text-lg">景德镇</h3>
+                  <h3 className="font-bold text-lg">Jingdezhen Porcelain Capital</h3>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">千年瓷都，亲手体验陶瓷制作的传统工艺</p>
+                <p className="text-gray-600 text-sm mb-4">Thousand-year porcelain capital, hands-on experience of traditional ceramic craftsmanship</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-sm text-gray-500">
                     <MapPin className="h-4 w-4 mr-1" />
-                    江西景德镇
+                    Jingdezhen, Jiangxi
                   </div>
                   <ArrowRight className="h-4 w-4 text-amber-600 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -119,18 +119,18 @@ export default function HomePage() {
             <Card className="group hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48 bg-gradient-to-br from-green-100 to-emerald-200 rounded-t-lg overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/lushan-mountain-scenic-natural-landscape-waterfall.jpg')] bg-cover bg-center"></div>
-                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">自然奇观</Badge>
+                <Badge className="absolute top-3 left-3 bg-amber-600 text-white">Natural Wonder</Badge>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center mb-2">
                   <Mountain className="h-5 w-5 text-amber-600 mr-2" />
-                  <h3 className="font-bold text-lg">庐山</h3>
+                  <h3 className="font-bold text-lg">Lushan Mountain</h3>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">世界文化遗产，感受"不识庐山真面目"的诗意</p>
+                <p className="text-gray-600 text-sm mb-4">UNESCO World Heritage Site, experience the poetic beauty of "not knowing the true face of Lushan"</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-sm text-gray-500">
                     <MapPin className="h-4 w-4 mr-1" />
-                    江西庐山
+                    Lushan, Jiangxi
                   </div>
                   <ArrowRight className="h-4 w-4 text-amber-600 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -144,8 +144,8 @@ export default function HomePage() {
       <section className="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">精心设计的旅行计划</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">从经典路线到高端定制，满足不同需求的家庭旅行体验</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Carefully Designed Travel Plans</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">From classic routes to premium customization, meeting different family travel experience needs</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -155,52 +155,52 @@ export default function HomePage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
                     <Clock className="h-8 w-8 text-amber-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">3天经典之旅</h3>
-                  <p className="text-gray-600">精选核心景点，适合初次体验</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">3-Day Classic Journey</h3>
+                  <p className="text-gray-600">Selected core attractions, perfect for first-time experience</p>
                 </div>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    义乌商贸城 + 横店影视城
+                    Yiwu Trade City + Hengdian Studios
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    家庭友好行程安排
+                    Family-friendly itinerary
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    专业导游服务
+                    Professional guide service
                   </li>
                 </ul>
-                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">查看详情</Button>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">View Details</Button>
               </CardContent>
             </Card>
 
             <Card className="bg-white hover:shadow-xl transition-shadow duration-300 border-2 border-amber-200">
-              <div className="bg-amber-600 text-white text-center py-2 text-sm font-medium">推荐选择</div>
+              <div className="bg-amber-600 text-white text-center py-2 text-sm font-medium">Recommended Choice</div>
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
                     <Users className="h-8 w-8 text-amber-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">5天高端之旅</h3>
-                  <p className="text-gray-600">深度体验，奢华享受</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">5-Day Premium Journey</h3>
+                  <p className="text-gray-600">In-depth experience, luxury enjoyment</p>
                 </div>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    四大目的地全覆盖
+                    All four destinations covered
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    五星级酒店住宿
+                    Five-star hotel accommodation
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    私人定制体验
+                    Private customized experience
                   </li>
                 </ul>
-                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">查看详情</Button>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">View Details</Button>
               </CardContent>
             </Card>
 
@@ -210,24 +210,24 @@ export default function HomePage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
                     <Palette className="h-8 w-8 text-amber-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">定制旅行计划</h3>
-                  <p className="text-gray-600">完全个性化，专属于您</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Custom Travel Plan</h3>
+                  <p className="text-gray-600">Completely personalized, exclusively for you</p>
                 </div>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    根据需求量身定制
+                    Tailored to your needs
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    灵活时间安排
+                    Flexible time arrangement
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    专属旅行顾问
+                    Dedicated travel advisor
                   </li>
                 </ul>
-                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">开始定制</Button>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">Start Customizing</Button>
               </CardContent>
             </Card>
           </div>
