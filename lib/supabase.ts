@@ -99,6 +99,9 @@ export async function getBlogPosts(published: boolean = true) {
   return data
 }
 
+// 别名函数，为了兼容性
+export const getAllBlogPosts = getBlogPosts
+
 export async function getBlogPost(id: number) {
   const { data, error } = await supabase
     .from('blog_posts')
