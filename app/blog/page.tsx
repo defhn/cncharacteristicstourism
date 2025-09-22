@@ -11,7 +11,7 @@ import Footer from "@/components/footer"
 
 
 
-const categories = ["全部", "目的地攻略", "亲子旅行", "文化体验", "摄影攻略", "美食攻略", "旅行贴士"]
+const categories = ["All", "Destination Guides", "Family Travel", "Cultural Experience", "Photography Tips", "Food Guides", "Travel Tips"]
 
 export default async function BlogPage() {
   let blogPosts = []
@@ -25,36 +25,36 @@ export default async function BlogPage() {
     blogPosts = [
       {
         id: 1,
-        title: "义乌国际商贸城深度探索：全球贸易的心脏",
-        excerpt: "走进世界最大的小商品批发市场，感受全球贸易的脉搏跳动，探索中国制造的奇迹...",
-        author: "李文华",
+        title: "Yiwu International Trade City Deep Exploration: The Heart of Global Trade",
+        excerpt: "Step into the world's largest small commodity wholesale market, feel the pulse of global trade, and explore the miracle of Chinese manufacturing...",
+        author: "David Chen",
         created_at: "2024-03-15",
-        category: "目的地攻略",
+        category: "Destination Guides",
         image: "/yiwu-international-trade-city-modern-buildings.jpg",
         views: 1250,
-        tags: ["义乌", "商贸", "购物", "文化体验"],
+        tags: ["Yiwu", "Trade", "Shopping", "Cultural Experience"],
       },
       {
         id: 2,
-        title: "横店影视城亲子游攻略：让孩子爱上中华文化",
-        excerpt: "带着孩子穿越古今，在横店影视城体验不一样的历史文化之旅，寓教于乐的完美选择...",
-        author: "王美丽",
+        title: "Hengdian Film Studios Family Guide: Making Children Fall in Love with Chinese Culture",
+        excerpt: "Take your children on a journey through time at Hengdian Film Studios, experiencing a unique historical and cultural adventure that combines education with entertainment...",
+        author: "Sarah Wang",
         created_at: "2024-03-12",
-        category: "亲子旅行",
+        category: "Family Travel",
         image: "/hengdian-film-studios-movie-sets-traditional-chine.jpg",
         views: 980,
-        tags: ["横店", "亲子游", "影视", "教育"],
+        tags: ["Hengdian", "Family Travel", "Film", "Education"],
       },
       {
         id: 3,
-        title: "景德镇陶瓷文化之旅：千年瓷都的艺术魅力",
-        excerpt: "在景德镇感受千年瓷都的文化底蕴，亲手体验陶瓷制作的乐趣，带走独一无二的作品...",
-        author: "张艺术",
+        title: "Jingdezhen Ceramic Cultural Journey: The Artistic Charm of the Millennium Porcelain Capital",
+        excerpt: "Experience the cultural heritage of the millennium porcelain capital in Jingdezhen, enjoy hands-on ceramic making, and take home unique works of art...",
+        author: "Michael Zhang",
         created_at: "2024-03-10",
-        category: "文化体验",
+        category: "Cultural Experience",
         image: "/jingdezhen-porcelain-pottery-traditional-chinese-c.jpg",
         views: 1100,
-        tags: ["景德镇", "陶瓷", "手工艺", "文化"],
+        tags: ["Jingdezhen", "Ceramics", "Handicrafts", "Culture"],
       },
     ]
   }
@@ -75,9 +75,9 @@ export default async function BlogPage() {
             <div className="flex items-center space-x-4">
               <div className="relative flex-1 max-w-md">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                <Input placeholder="搜索文章..." className="pl-10" />
+                <Input placeholder="Search articles..." className="pl-10" />
               </div>
-              <Button className="bg-amber-600 hover:bg-amber-700 text-white">搜索</Button>
+              <Button className="bg-amber-600 hover:bg-amber-700 text-white">Search</Button>
             </div>
           </div>
         </div>
@@ -90,10 +90,10 @@ export default async function BlogPage() {
             {categories.map((category) => (
               <Button
                 key={category}
-                variant={category === "全部" ? "default" : "outline"}
+                variant={category === "All" ? "default" : "outline"}
                 size="sm"
                 className={
-                  category === "全部" ? "bg-amber-600 hover:bg-amber-700" : "hover:bg-amber-50 hover:border-amber-300"
+                  category === "All" ? "bg-amber-600 hover:bg-amber-700" : "hover:bg-amber-50 hover:border-amber-300"
                 }
               >
                 {category}
@@ -156,7 +156,7 @@ export default async function BlogPage() {
                           </div>
                           <Link href={`/blog/${post.id}`}>
                             <Button variant="ghost" size="sm" className="text-amber-600 hover:text-amber-700">
-                              阅读更多 <ArrowRight className="ml-1 h-4 w-4" />
+                              Read More <ArrowRight className="ml-1 h-4 w-4" />
                             </Button>
                           </Link>
                         </div>
@@ -170,7 +170,7 @@ export default async function BlogPage() {
               <div className="flex justify-center mt-12">
                 <div className="flex space-x-2">
                   <Button variant="outline" size="sm">
-                    上一页
+                    Previous
                   </Button>
                   <Button size="sm" className="bg-amber-600 hover:bg-amber-700 text-white">
                     1
@@ -182,7 +182,7 @@ export default async function BlogPage() {
                     3
                   </Button>
                   <Button variant="outline" size="sm">
-                    下一页
+                    Next
                   </Button>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default async function BlogPage() {
               {/* Popular Posts */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">热门文章</CardTitle>
+                  <CardTitle className="text-lg">Popular Posts</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {blogPosts.slice(0, 4).map((post) => (
@@ -223,33 +223,33 @@ export default async function BlogPage() {
               {/* Destinations */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">热门目的地</CardTitle>
+                  <CardTitle className="text-lg">Popular Destinations</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <Link href="/destinations/yiwu" className="flex items-center space-x-2 text-sm hover:text-amber-600">
                     <Building2 className="h-4 w-4 text-amber-600" />
-                    <span>义乌国际商贸城</span>
+                    <span>Yiwu International Trade City</span>
                   </Link>
                   <Link
                     href="/destinations/hengdian"
                     className="flex items-center space-x-2 text-sm hover:text-amber-600"
                   >
                     <Camera className="h-4 w-4 text-amber-600" />
-                    <span>横店影视城</span>
+                    <span>Hengdian Film Studios</span>
                   </Link>
                   <Link
                     href="/destinations/jingdezhen"
                     className="flex items-center space-x-2 text-sm hover:text-amber-600"
                   >
                     <Mountain className="h-4 w-4 text-amber-600" />
-                    <span>景德镇瓷都</span>
+                    <span>Jingdezhen Porcelain Capital</span>
                   </Link>
                   <Link
                     href="/destinations/lushan"
                     className="flex items-center space-x-2 text-sm hover:text-amber-600"
                   >
                     <MapPin className="h-4 w-4 text-amber-600" />
-                    <span>庐山风景区</span>
+                    <span>Lushan Mountain</span>
                   </Link>
                 </CardContent>
               </Card>
@@ -257,13 +257,13 @@ export default async function BlogPage() {
               {/* Newsletter */}
               <Card className="bg-amber-50 border-amber-200">
                 <CardHeader>
-                  <CardTitle className="text-lg text-amber-800">订阅我们的博客</CardTitle>
+                  <CardTitle className="text-lg text-amber-800">Subscribe to Our Blog</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-amber-700 mb-4">获取最新的旅行攻略和文化体验分享</p>
+                  <p className="text-sm text-amber-700 mb-4">Get the latest travel guides and cultural experience sharing</p>
                   <div className="space-y-3">
-                    <Input placeholder="输入您的邮箱" className="bg-white" />
-                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">订阅博客</Button>
+                    <Input placeholder="Enter your email" className="bg-white" />
+                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">Subscribe Blog</Button>
                   </div>
                 </CardContent>
               </Card>

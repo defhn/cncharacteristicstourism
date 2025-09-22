@@ -80,7 +80,7 @@ export default function CustomPlan() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="start-date">Departure Date</Label>
-                      <Input id="start-date" type="date" />
+                      <Input id="start-date" type="date" lang="en" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="departure">Departure City</Label>

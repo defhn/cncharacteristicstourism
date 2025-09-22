@@ -209,6 +209,7 @@ export default function TravelPlannerPage() {
                   <Input
                     id="start-date"
                     type="date"
+                    lang="en"
                     value={planData.startDate}
                     onChange={(e) => setPlanData((prev) => ({ ...prev, startDate: e.target.value }))}
                   />
