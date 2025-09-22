@@ -38,38 +38,38 @@ interface Destination {
 const destinations: Destination[] = [
   {
     id: "yiwu",
-    name: "义乌国际商贸城",
-    description: "世界最大的小商品批发市场",
+    name: "Yiwu International Trade City",
+    description: "World's largest small commodity wholesale market",
     icon: Building2,
-    duration: "1-2天",
-    highlights: ["全球贸易中心", "购物天堂", "商业文化"],
+    duration: "1-2 Days",
+    highlights: ["Global Trade Center", "Shopping Paradise", "Business Culture"],
     image: "/yiwu-international-trade-city-modern-buildings.jpg",
   },
   {
     id: "hengdian",
-    name: "横店影视城",
-    description: "中国好莱坞，古装剧拍摄基地",
+    name: "Hengdian Film Studios",
+    description: "China's Hollywood, ancient costume drama filming base",
     icon: Camera,
-    duration: "1-2天",
-    highlights: ["影视体验", "古装拍照", "文化演出"],
+    duration: "1-2 Days",
+    highlights: ["Film Experience", "Costume Photography", "Cultural Performance"],
     image: "/hengdian-film-studios-movie-sets-traditional-chine.jpg",
   },
   {
     id: "jingdezhen",
-    name: "景德镇瓷都",
-    description: "千年瓷都，陶瓷文化圣地",
+    name: "Jingdezhen Porcelain Capital",
+    description: "Millennium porcelain capital, ceramic culture sanctuary",
     icon: Palette,
-    duration: "1-2天",
-    highlights: ["陶瓷制作", "文化体验", "艺术欣赏"],
+    duration: "1-2 Days",
+    highlights: ["Ceramic Making", "Cultural Experience", "Art Appreciation"],
     image: "/jingdezhen-porcelain-pottery-traditional-chinese-c.jpg",
   },
   {
     id: "lushan",
-    name: "庐山风景区",
-    description: "世界文化遗产，诗意山水",
+    name: "Lushan Scenic Area",
+    description: "World Cultural Heritage, poetic landscape",
     icon: Mountain,
-    duration: "1-2天",
-    highlights: ["自然风光", "文化古迹", "摄影胜地"],
+    duration: "1-2 Days",
+    highlights: ["Natural Scenery", "Cultural Relics", "Photography Paradise"],
     image: "/lushan-mountain-scenic-natural-landscape-waterfall.jpg",
   },
 ]
@@ -111,21 +111,7 @@ export default function TravelPlannerPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5 text-amber-600" />
-              <span className="text-amber-600 hover:text-amber-700">返回首页</span>
-            </Link>
-            <div className="flex items-center space-x-2">
-              <MapPin className="h-6 w-6 text-amber-600" />
-              <span className="text-xl font-bold text-gray-900">智能旅行规划师</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Progress Bar */}
       <div className="bg-white border-b">
@@ -151,11 +137,11 @@ export default function TravelPlannerPage() {
             ))}
           </div>
           <div className="flex justify-between mt-2 text-xs text-gray-500">
-            <span>基本信息</span>
-            <span>选择目的地</span>
-            <span>兴趣偏好</span>
-            <span>服务选择</span>
-            <span>确认计划</span>
+            <span>Basic Info</span>
+            <span>Destinations</span>
+            <span>Interests</span>
+            <span>Services</span>
+            <span>Confirm</span>
           </div>
         </div>
       </div>
@@ -168,14 +154,14 @@ export default function TravelPlannerPage() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Users className="h-5 w-5 mr-2 text-amber-600" />
-                基本旅行信息
+                Basic Travel Information
               </CardTitle>
-              <p className="text-gray-600">告诉我们您的基本需求，我们为您量身定制</p>
+              <p className="text-gray-600">Tell us your basic needs, we will customize for you</p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label>出行人数</Label>
+                  <Label>Number of Travelers</Label>
                   <div className="flex items-center space-x-4">
                     <Button
                       variant="outline"
@@ -196,7 +182,7 @@ export default function TravelPlannerPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label>出行天数</Label>
+                  <Label>Travel Duration</Label>
                   <div className="flex items-center space-x-4">
                     <Button
                       variant="outline"
@@ -219,7 +205,7 @@ export default function TravelPlannerPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="start-date">出发日期</Label>
+                  <Label htmlFor="start-date">Departure Date</Label>
                   <Input
                     id="start-date"
                     type="date"
@@ -229,7 +215,7 @@ export default function TravelPlannerPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label>预算范围（每人）</Label>
+                  <Label>Budget Range (Per Person)</Label>
                   <div className="grid grid-cols-2 gap-2">
                     {["3000-5000", "5000-8000", "8000-12000", "12000+"].map((budget) => (
                       <Button
@@ -239,7 +225,7 @@ export default function TravelPlannerPage() {
                         className={planData.budget === budget ? "bg-amber-600 hover:bg-amber-700" : ""}
                         onClick={() => setPlanData((prev) => ({ ...prev, budget }))}
                       >
-                        ¥{budget}
+                        ${budget}
                       </Button>
                     ))}
                   </div>
@@ -248,7 +234,7 @@ export default function TravelPlannerPage() {
 
               <div className="flex justify-end">
                 <Button onClick={nextStep} className="bg-amber-600 hover:bg-amber-700">
-                  下一步 <ArrowRight className="ml-2 h-4 w-4" />
+                  Next Step <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>
@@ -261,9 +247,9 @@ export default function TravelPlannerPage() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <MapPin className="h-5 w-5 mr-2 text-amber-600" />
-                选择您感兴趣的目的地
+                Select Your Interested Destinations
               </CardTitle>
-              <p className="text-gray-600">可以选择多个目的地，我们会为您合理安排行程</p>
+              <p className="text-gray-600">You can select multiple destinations, we will arrange the itinerary reasonably for you</p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
@@ -312,14 +298,14 @@ export default function TravelPlannerPage() {
               <div className="flex justify-between">
                 <Button variant="outline" onClick={prevStep}>
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  上一步
+                  Previous
                 </Button>
                 <Button
                   onClick={nextStep}
                   disabled={planData.selectedDestinations.length === 0}
                   className="bg-amber-600 hover:bg-amber-700"
                 >
-                  下一步 <ArrowRight className="ml-2 h-4 w-4" />
+                  Next Step <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>
@@ -332,22 +318,22 @@ export default function TravelPlannerPage() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Palette className="h-5 w-5 mr-2 text-amber-600" />
-                您的兴趣偏好
+                Your Interest Preferences
               </CardTitle>
-              <p className="text-gray-600">选择您感兴趣的活动类型，帮助我们定制更合适的体验</p>
+              <p className="text-gray-600">Select the types of activities you are interested in to help us customize more suitable experiences</p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid md:grid-cols-3 gap-4">
                 {[
-                  "文化历史",
-                  "手工艺体验",
-                  "摄影拍照",
-                  "美食品尝",
-                  "购物体验",
-                  "自然风光",
-                  "亲子活动",
-                  "艺术欣赏",
-                  "传统表演",
+                  "Cultural History",
+                  "Handicraft Experience",
+                  "Photography",
+                  "Food Tasting",
+                  "Shopping Experience",
+                  "Natural Scenery",
+                  "Family Activities",
+                  "Art Appreciation",
+                  "Traditional Performance",
                 ].map((interest) => (
                   <div
                     key={interest}
@@ -369,10 +355,10 @@ export default function TravelPlannerPage() {
               <div className="flex justify-between">
                 <Button variant="outline" onClick={prevStep}>
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  上一步
+                  Previous
                 </Button>
                 <Button onClick={nextStep} className="bg-amber-600 hover:bg-amber-700">
-                  下一步 <ArrowRight className="ml-2 h-4 w-4" />
+                  Next Step <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </CardContent>
@@ -587,6 +573,8 @@ export default function TravelPlannerPage() {
           </Card>
         )}
       </div>
+
+      <Footer />
     </div>
   )
 }

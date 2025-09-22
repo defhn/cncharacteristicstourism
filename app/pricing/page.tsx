@@ -41,8 +41,8 @@ export default function PricingPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">旅行套餐价格</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">三种不同档次的旅行套餐，满足不同预算和需求的家庭</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Travel Package Pricing</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Three different levels of travel packages to meet different budgets and family needs</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -52,102 +52,102 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
                   <Clock className="h-8 w-8 text-amber-600" />
                 </div>
-                <CardTitle className="text-2xl">3天经典之旅</CardTitle>
-                <p className="text-gray-600">适合初次体验的家庭</p>
+                <CardTitle className="text-2xl">3-Day Classic Journey</CardTitle>
+                <p className="text-gray-600">Perfect for first-time families</p>
                 <div className="mt-4">
-                  <div className="text-4xl font-bold text-amber-600">¥2,888</div>
-                  <div className="text-sm text-gray-500">每人价格</div>
+                  <div className="text-4xl font-bold text-amber-600">$288</div>
+                  <div className="text-sm text-gray-500">Per Person</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">义乌国际商贸城 + 横店影视城</span>
+                    <span className="text-sm">Yiwu International Trade City + Hengdian Film Studios</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">四星级酒店住宿（2晚）</span>
+                    <span className="text-sm">4-star hotel accommodation (2 nights)</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">专业导游全程陪同</span>
+                    <span className="text-sm">Professional guide throughout</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">所有景点门票</span>
+                    <span className="text-sm">All attraction tickets</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">接送机服务</span>
+                    <span className="text-sm">Airport transfer service</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">旅游意外保险</span>
+                    <span className="text-sm">Travel accident insurance</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">6餐（3早3正）</span>
+                    <span className="text-sm">6 meals (3 breakfasts, 3 main meals)</span>
                   </div>
                 </div>
-                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white mt-6">立即预订</Button>
-                <p className="text-xs text-gray-500 text-center">* 2人起订，儿童价格请咨询</p>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white mt-6">Book Now</Button>
+                <p className="text-xs text-gray-500 text-center">* Minimum 2 people, please inquire for children's prices</p>
               </CardContent>
             </Card>
 
             {/* 5-Day Premium Plan */}
             <Card className="hover:shadow-xl transition-shadow duration-300 border-2 border-amber-200 relative">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-amber-600 text-white px-4 py-1">最受欢迎</Badge>
+                <Badge className="bg-amber-600 text-white px-4 py-1">Most Popular</Badge>
               </div>
               <CardHeader className="text-center pb-8">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
                   <Users className="h-8 w-8 text-amber-600" />
                 </div>
-                <CardTitle className="text-2xl">5天高端之旅</CardTitle>
-                <p className="text-gray-600">深度体验，奢华享受</p>
+                <CardTitle className="text-2xl">5-Day Premium Journey</CardTitle>
+                <p className="text-gray-600">In-depth experience, luxury enjoyment</p>
                 <div className="mt-4">
-                  <div className="text-4xl font-bold text-amber-600">¥8,888</div>
-                  <div className="text-sm text-gray-500">每人价格</div>
+                  <div className="text-4xl font-bold text-amber-600">$888</div>
+                  <div className="text-sm text-gray-500">Per Person</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">四大目的地全覆盖</span>
+                    <span className="text-sm">Complete coverage of four destinations</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">五星级豪华酒店（4晚）</span>
+                    <span className="text-sm">5-star luxury hotel (4 nights)</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">奔驰商务车专车服务</span>
+                    <span className="text-sm">Mercedes business car private service</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">资深文化导游专属服务</span>
+                    <span className="text-sm">Senior cultural guide exclusive service</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">米其林餐厅用餐体验</span>
+                    <span className="text-sm">Michelin restaurant dining experience</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">专业摄影师跟拍服务</span>
+                    <span className="text-sm">Professional photographer follow-up service</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">个人旅行纪念册制作</span>
+                    <span className="text-sm">Personal travel album creation</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">高端旅游保险</span>
+                    <span className="text-sm">Premium travel insurance</span>
                   </div>
                 </div>
-                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white mt-6">立即预订</Button>
-                <p className="text-xs text-gray-500 text-center">* 每团限制4人，提前30天预订享受优惠</p>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white mt-6">Book Now</Button>
+                <p className="text-xs text-gray-500 text-center">* Limited to 4 people per group, enjoy discount with 30-day advance booking</p>
               </CardContent>
             </Card>
 
@@ -157,46 +157,46 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
                   <Star className="h-8 w-8 text-amber-600" />
                 </div>
-                <CardTitle className="text-2xl">定制旅行计划</CardTitle>
-                <p className="text-gray-600">完全个性化定制</p>
+                <CardTitle className="text-2xl">Custom Travel Plan</CardTitle>
+                <p className="text-gray-600">Completely personalized customization</p>
                 <div className="mt-4">
-                  <div className="text-4xl font-bold text-amber-600">面议</div>
-                  <div className="text-sm text-gray-500">根据需求报价</div>
+                  <div className="text-4xl font-bold text-amber-600">Negotiable</div>
+                  <div className="text-sm text-gray-500">Quote based on requirements</div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">根据需求量身定制</span>
+                    <span className="text-sm">Tailored to your specific needs</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">灵活时间安排</span>
+                    <span className="text-sm">Flexible time arrangement</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">专属旅行顾问</span>
+                    <span className="text-sm">Dedicated travel advisor</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">VIP专享服务</span>
+                    <span className="text-sm">VIP exclusive service</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">独特文化体验</span>
+                    <span className="text-sm">Unique cultural experience</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">24小时贴心服务</span>
+                    <span className="text-sm">24-hour attentive service</span>
                   </div>
                   <div className="flex items-center">
                     <Check className="h-4 w-4 text-green-500 mr-3" />
-                    <span className="text-sm">特殊需求满足</span>
+                    <span className="text-sm">Special requirements fulfillment</span>
                   </div>
                 </div>
-                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white mt-6">开始定制</Button>
-                <p className="text-xs text-gray-500 text-center">* 免费咨询，满意后付款</p>
+                <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white mt-6">Start Customization</Button>
+                <p className="text-xs text-gray-500 text-center">* Free consultation, payment after satisfaction</p>
               </CardContent>
             </Card>
           </div>
@@ -207,8 +207,8 @@ export default function PricingPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">我们的服务优势</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">专业团队，贴心服务，让您的旅行无忧无虑</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Service Advantages</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Professional team, attentive service, making your trip worry-free</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -217,8 +217,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Users className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">专业导游</h3>
-                <p className="text-sm text-gray-600">资深文化导游，深度讲解中华文化内涵</p>
+                <h3 className="font-semibold text-lg mb-2">Professional Guide</h3>
+                <p className="text-sm text-gray-600">Senior cultural guides with in-depth Chinese cultural knowledge</p>
               </CardContent>
             </Card>
 
@@ -227,8 +227,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Car className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">舒适交通</h3>
-                <p className="text-sm text-gray-600">豪华商务车或舒适大巴，安全便捷</p>
+                <h3 className="font-semibold text-lg mb-2">Comfortable Transportation</h3>
+                <p className="text-sm text-gray-600">Luxury business cars or comfortable buses, safe and convenient</p>
               </CardContent>
             </Card>
 
@@ -237,8 +237,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Utensils className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">精选美食</h3>
-                <p className="text-sm text-gray-600">当地特色餐厅，品尝正宗中华美食</p>
+                <h3 className="font-semibold text-lg mb-2">Selected Cuisine</h3>
+                <p className="text-sm text-gray-600">Local specialty restaurants, taste authentic Chinese cuisine</p>
               </CardContent>
             </Card>
 
@@ -247,8 +247,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Shield className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">安全保障</h3>
-                <p className="text-sm text-gray-600">全程保险覆盖，24小时应急服务</p>
+                <h3 className="font-semibold text-lg mb-2">Safety Guarantee</h3>
+                <p className="text-sm text-gray-600">Full insurance coverage, 24-hour emergency service</p>
               </CardContent>
             </Card>
 
@@ -257,8 +257,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Camera className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">摄影服务</h3>
-                <p className="text-sm text-gray-600">专业摄影师跟拍，记录美好时光</p>
+                <h3 className="font-semibold text-lg mb-2">Photography Service</h3>
+                <p className="text-sm text-gray-600">Professional photographer follow-up, capturing beautiful moments</p>
               </CardContent>
             </Card>
 
@@ -267,8 +267,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Star className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">品质住宿</h3>
-                <p className="text-sm text-gray-600">精选星级酒店，舒适安全的住宿环境</p>
+                <h3 className="font-semibold text-lg mb-2">Quality Accommodation</h3>
+                <p className="text-sm text-gray-600">Selected star hotels, comfortable and safe accommodation</p>
               </CardContent>
             </Card>
 
@@ -277,8 +277,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Clock className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">灵活安排</h3>
-                <p className="text-sm text-gray-600">根据客户需求调整行程，个性化服务</p>
+                <h3 className="font-semibold text-lg mb-2">Flexible Arrangement</h3>
+                <p className="text-sm text-gray-600">Adjust itinerary according to customer needs, personalized service</p>
               </CardContent>
             </Card>
 
@@ -287,8 +287,8 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <MessageCircle className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">贴心服务</h3>
-                <p className="text-sm text-gray-600">全程客服支持，随时解答您的疑问</p>
+                <h3 className="font-semibold text-lg mb-2">Attentive Service</h3>
+                <p className="text-sm text-gray-600">Full customer service support, answering your questions anytime</p>
               </CardContent>
             </Card>
           </div>
@@ -299,71 +299,71 @@ export default function PricingPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">价格说明</h2>
-            <p className="text-lg text-gray-600">透明收费，无隐藏费用</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing Details</h2>
+            <p className="text-lg text-gray-600">Transparent pricing, no hidden fees</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg text-green-600">费用包含</CardTitle>
+                <CardTitle className="text-lg text-green-600">Included</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-green-500 mr-2" />
-                  <span className="text-sm">全程住宿费用</span>
+                  <span className="text-sm">Full accommodation costs</span>
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-green-500 mr-2" />
-                  <span className="text-sm">景点门票费用</span>
+                  <span className="text-sm">Attraction ticket costs</span>
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-green-500 mr-2" />
-                  <span className="text-sm">导游服务费用</span>
+                  <span className="text-sm">Guide service costs</span>
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-green-500 mr-2" />
-                  <span className="text-sm">交通接送费用</span>
+                  <span className="text-sm">Transportation transfer costs</span>
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-green-500 mr-2" />
-                  <span className="text-sm">旅游保险费用</span>
+                  <span className="text-sm">Travel insurance costs</span>
                 </div>
                 <div className="flex items-center">
                   <Check className="h-4 w-4 text-green-500 mr-2" />
-                  <span className="text-sm">行程内餐食费用</span>
+                  <span className="text-sm">Meal costs within itinerary</span>
                 </div>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg text-red-600">费用不含</CardTitle>
+                <CardTitle className="text-lg text-red-600">Not Included</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="flex items-center">
                   <span className="w-4 h-4 mr-2 text-red-500">×</span>
-                  <span className="text-sm">往返大交通费用</span>
+                  <span className="text-sm">Round-trip transportation costs</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-4 h-4 mr-2 text-red-500">×</span>
-                  <span className="text-sm">个人消费及购物</span>
+                  <span className="text-sm">Personal consumption and shopping</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-4 h-4 mr-2 text-red-500">×</span>
-                  <span className="text-sm">行程外的自费项目</span>
+                  <span className="text-sm">Optional activities outside itinerary</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-4 h-4 mr-2 text-red-500">×</span>
-                  <span className="text-sm">单房差费用</span>
+                  <span className="text-sm">Single room supplement</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-4 h-4 mr-2 text-red-500">×</span>
-                  <span className="text-sm">因不可抗力产生的费用</span>
+                  <span className="text-sm">Costs due to force majeure</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-4 h-4 mr-2 text-red-500">×</span>
-                  <span className="text-sm">其他未明确包含的费用</span>
+                  <span className="text-sm">Other costs not explicitly included</span>
                 </div>
               </CardContent>
             </Card>
@@ -375,8 +375,8 @@ export default function PricingPage() {
       <section className="py-16 bg-gradient-to-r from-amber-50 to-orange-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">联系我们</h2>
-            <p className="text-lg text-gray-600">专业客服团队，随时为您服务</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
+            <p className="text-lg text-gray-600">Professional customer service team, always at your service</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -385,9 +385,9 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Phone className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">电话咨询</h3>
-                <p className="text-amber-600 font-semibold">400-123-4567</p>
-                <p className="text-sm text-gray-600 mt-2">工作时间：9:00-21:00</p>
+                <h3 className="font-semibold text-lg mb-2">Phone Consultation</h3>
+                <p className="text-amber-600 font-semibold">+1-800-123-4567</p>
+                <p className="text-sm text-gray-600 mt-2">Working hours: 9:00-21:00</p>
               </CardContent>
             </Card>
 
@@ -396,9 +396,9 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <MessageCircle className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">微信咨询</h3>
+                <h3 className="font-semibold text-lg mb-2">WhatsApp Consultation</h3>
                 <p className="text-amber-600 font-semibold">ChinaJourney2024</p>
-                <p className="text-sm text-gray-600 mt-2">扫码添加客服微信</p>
+                <p className="text-sm text-gray-600 mt-2">Scan to add customer service</p>
               </CardContent>
             </Card>
 
@@ -407,40 +407,40 @@ export default function PricingPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-amber-100 rounded-full mb-4">
                   <Mail className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2">邮件咨询</h3>
+                <h3 className="font-semibold text-lg mb-2">Email Consultation</h3>
                 <p className="text-amber-600 font-semibold">info@chinajourney.com</p>
-                <p className="text-sm text-gray-600 mt-2">24小时内回复</p>
+                <p className="text-sm text-gray-600 mt-2">Reply within 24 hours</p>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-12">
             <div className="bg-white rounded-lg p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">预订流程</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Booking Process</h3>
               <div className="grid md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <div className="bg-amber-100 text-amber-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">
                     1
                   </div>
-                  <p className="text-sm font-semibold">咨询需求</p>
+                  <p className="text-sm font-semibold">Inquiry Requirements</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-amber-100 text-amber-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">
                     2
                   </div>
-                  <p className="text-sm font-semibold">确认行程</p>
+                  <p className="text-sm font-semibold">Confirm Itinerary</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-amber-100 text-amber-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">
                     3
                   </div>
-                  <p className="text-sm font-semibold">签约付款</p>
+                  <p className="text-sm font-semibold">Sign & Payment</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-amber-100 text-amber-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mx-auto mb-2">
                     4
                   </div>
-                  <p className="text-sm font-semibold">开心出行</p>
+                  <p className="text-sm font-semibold">Happy Journey</p>
                 </div>
               </div>
             </div>

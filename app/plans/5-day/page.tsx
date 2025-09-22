@@ -64,8 +64,8 @@ export default function FiveDayPlan() {
                 <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Crown className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold mb-2">五星级住宿</h3>
-                <p className="text-sm text-gray-600">精选当地最佳五星级酒店</p>
+                <h3 className="font-semibold mb-2">5-Star Accommodation</h3>
+                <p className="text-sm text-gray-600">Selected best local 5-star hotels</p>
               </CardContent>
             </Card>
             <Card className="text-center border-amber-200">
@@ -73,8 +73,8 @@ export default function FiveDayPlan() {
                 <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold mb-2">专属导游</h3>
-                <p className="text-sm text-gray-600">资深文化导游一对一服务</p>
+                <h3 className="font-semibold mb-2">Exclusive Guide</h3>
+                <p className="text-sm text-gray-600">Senior cultural guide one-on-one service</p>
               </CardContent>
             </Card>
             <Card className="text-center border-amber-200">
@@ -82,8 +82,8 @@ export default function FiveDayPlan() {
                 <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Car className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold mb-2">豪华专车</h3>
-                <p className="text-sm text-gray-600">奔驰商务车全程接送</p>
+                <h3 className="font-semibold mb-2">Luxury Private Car</h3>
+                <p className="text-sm text-gray-600">Mercedes business car full transfer service</p>
               </CardContent>
             </Card>
             <Card className="text-center border-amber-200">
@@ -91,8 +91,8 @@ export default function FiveDayPlan() {
                 <div className="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Utensils className="h-6 w-6 text-amber-600" />
                 </div>
-                <h3 className="font-semibold mb-2">米其林餐厅</h3>
-                <p className="text-sm text-gray-600">品尝地道高端中华料理</p>
+                <h3 className="font-semibold mb-2">Michelin Restaurant</h3>
+                <p className="text-sm text-gray-600">Taste authentic premium Chinese cuisine</p>
               </CardContent>
             </Card>
           </div>
@@ -102,7 +102,7 @@ export default function FiveDayPlan() {
       {/* Detailed Itinerary */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">精心设计的行程安排</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Carefully Designed Itinerary</h2>
 
           <div className="space-y-8">
             {/* Day 1 */}
@@ -110,41 +110,41 @@ export default function FiveDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第1天
+                    Day 1
                   </Badge>
-                  抵达义乌 - 商贸帝国探索
+                  Arrive in Yiwu - Trade Empire Exploration
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-amber-50 p-4 rounded-lg mb-4">
                   <h5 className="font-semibold text-sm mb-2 flex items-center">
                     <Crown className="h-4 w-4 mr-2 text-amber-600" />
-                    VIP接机服务
+                    VIP Airport Transfer Service
                   </h5>
-                  <p className="text-sm text-gray-700">专属司机机场接机，奔驰商务车直达五星级酒店</p>
+                  <p className="text-sm text-gray-700">Dedicated driver airport pickup, Mercedes business car direct to 5-star hotel</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-3">
-                    <h5 className="font-semibold">上午安排</h5>
+                    <h5 className="font-semibold">Morning Arrangement</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Building2 className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">义乌国际商贸城VIP参观</h6>
-                        <p className="text-xs text-gray-600">专属通道，深度了解全球贸易中心</p>
+                        <h6 className="font-semibold text-sm">Yiwu International Trade City VIP Tour</h6>
+                        <p className="text-xs text-gray-600">Exclusive access, in-depth understanding of global trade center</p>
                       </div>
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <h5 className="font-semibold">下午安排</h5>
+                    <h5 className="font-semibold">Evening Arrangement</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Utensils className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">米其林餐厅晚宴</h6>
-                        <p className="text-xs text-gray-600">品尝精致浙江菜，专业侍酒师服务</p>
+                        <h6 className="font-semibold text-sm">Michelin Restaurant Dinner</h6>
+                        <p className="text-xs text-gray-600">Taste exquisite Zhejiang cuisine, professional sommelier service</p>
                       </div>
                     </div>
                   </div>
@@ -157,34 +157,34 @@ export default function FiveDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第2天
+                    Day 2
                   </Badge>
-                  横店影视城 - 梦幻影视之旅
+                  Hengdian Film Studios - Magical Film Journey
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-3">
-                    <h5 className="font-semibold">影视体验</h5>
+                    <h5 className="font-semibold">Film Experience</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Camera className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">专业古装摄影</h6>
-                        <p className="text-xs text-gray-600">专业摄影师，精美古装，制作个人写真集</p>
+                        <h6 className="font-semibold text-sm">Professional Ancient Costume Photography</h6>
+                        <p className="text-xs text-gray-600">Professional photographer, exquisite costumes, create personal photo album</p>
                       </div>
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <h5 className="font-semibold">文化体验</h5>
+                    <h5 className="font-semibold">Cultural Experience</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Star className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">私人导览</h6>
-                        <p className="text-xs text-gray-600">影视城幕后探秘，与演员互动</p>
+                        <h6 className="font-semibold text-sm">Private Tour</h6>
+                        <p className="text-xs text-gray-600">Behind-the-scenes exploration, interact with actors</p>
                       </div>
                     </div>
                   </div>
@@ -197,34 +197,34 @@ export default function FiveDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第3天
+                    Day 3
                   </Badge>
-                  景德镇 - 千年瓷都艺术之旅
+                  Jingdezhen - Millennium Porcelain Capital Art Journey
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-3">
-                    <h5 className="font-semibold">陶瓷艺术</h5>
+                    <h5 className="font-semibold">Ceramic Art</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Palette className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">大师工坊体验</h6>
-                        <p className="text-xs text-gray-600">国家级陶瓷大师亲自指导制作</p>
+                        <h6 className="font-semibold text-sm">Master Workshop Experience</h6>
+                        <p className="text-xs text-gray-600">National ceramic master personal guidance</p>
                       </div>
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <h5 className="font-semibold">文化探索</h5>
+                    <h5 className="font-semibold">Cultural Exploration</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Star className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">私人博物馆参观</h6>
-                        <p className="text-xs text-gray-600">珍贵瓷器收藏，专业讲解</p>
+                        <h6 className="font-semibold text-sm">Private Museum Visit</h6>
+                        <p className="text-xs text-gray-600">Precious porcelain collection, professional explanation</p>
                       </div>
                     </div>
                   </div>
@@ -237,34 +237,34 @@ export default function FiveDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第4天
+                    Day 4
                   </Badge>
-                  庐山 - 诗意山水画卷
+                  Lushan - Poetic Landscape Scroll
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-3">
-                    <h5 className="font-semibold">自然奇观</h5>
+                    <h5 className="font-semibold">Natural Wonders</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Mountain className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">庐山风景区深度游</h6>
-                        <p className="text-xs text-gray-600">三叠泉瀑布，含鄱口日出</p>
+                        <h6 className="font-semibold text-sm">Lushan Scenic Area In-depth Tour</h6>
+                        <p className="text-xs text-gray-600">Sandie Spring Waterfall, Hanpo Mouth Sunrise</p>
                       </div>
                     </div>
                   </div>
                   <div className="space-y-3">
-                    <h5 className="font-semibold">文化体验</h5>
+                    <h5 className="font-semibold">Cultural Experience</h5>
                     <div className="flex items-start space-x-3">
                       <div className="bg-amber-100 p-2 rounded-full">
                         <Star className="h-4 w-4 text-amber-600" />
                       </div>
                       <div>
-                        <h6 className="font-semibold text-sm">诗词文化体验</h6>
-                        <p className="text-xs text-gray-600">古诗词朗诵，书法体验</p>
+                        <h6 className="font-semibold text-sm">Poetry Culture Experience</h6>
+                        <p className="text-xs text-gray-600">Ancient poetry recitation, calligraphy experience</p>
                       </div>
                     </div>
                   </div>
@@ -277,15 +277,15 @@ export default function FiveDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第5天
+                    Day 5
                   </Badge>
-                  文化总结 - 温馨送别
+                  Cultural Summary - Warm Farewell
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="bg-amber-50 p-4 rounded-lg">
-                  <h5 className="font-semibold text-sm mb-2">特别安排</h5>
-                  <p className="text-sm text-gray-700">制作个人旅行纪念册，专业摄影师全程跟拍照片整理</p>
+                  <h5 className="font-semibold text-sm mb-2">Special Arrangement</h5>
+                  <p className="text-sm text-gray-700">Create personal travel album, professional photographer full follow-up photo organization</p>
                 </div>
               </CardContent>
             </Card>
@@ -301,38 +301,38 @@ export default function FiveDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Crown className="h-5 w-5 mr-2 text-amber-600" />
-                  高端服务包含
+                  Premium Service Includes
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    全程五星级豪华酒店
+                    Full 5-star luxury hotel
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    奔驰商务车专车服务
+                    Mercedes business car private service
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    资深文化导游专属服务
+                    Senior cultural guide exclusive service
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    米其林餐厅用餐体验
+                    Michelin restaurant dining experience
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    专业摄影师跟拍服务
+                    Professional photographer follow-up service
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    个人旅行纪念册制作
+                    Personal travel album creation
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-amber-500 mr-2" />
-                    高端旅游保险
+                    Premium travel insurance
                   </li>
                 </ul>
               </CardContent>
@@ -341,23 +341,23 @@ export default function FiveDayPlan() {
             <Card className="bg-white border-2 border-amber-200">
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                  立即预订
-                  <Badge className="bg-gradient-to-r from-amber-600 to-orange-600 text-white">限量发售</Badge>
+                  Book Now
+                  <Badge className="bg-gradient-to-r from-amber-600 to-orange-600 text-white">Limited Release</Badge>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-amber-600">¥8,888</div>
-                  <div className="text-sm text-gray-500 line-through">原价 ¥9,888</div>
-                  <div className="text-sm text-gray-600">每人价格</div>
+                  <div className="text-4xl font-bold text-amber-600">$888</div>
+                  <div className="text-sm text-gray-500 line-through">Original Price $988</div>
+                  <div className="text-sm text-gray-600">Per Person</div>
                 </div>
                 <Button
                   className="w-full bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white"
                   size="lg"
                 >
-                  立即预订高端之旅
+                  Book Premium Journey Now
                 </Button>
-                <p className="text-xs text-gray-500 text-center">* 每团限制4人，提前30天预订享受优惠价格</p>
+                <p className="text-xs text-gray-500 text-center">* Limited to 4 people per group, enjoy discount with 30-day advance booking</p>
               </CardContent>
             </Card>
           </div>
