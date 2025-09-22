@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ArrowLeft, Star, Heart, Palette, Camera, Mountain, Building2 } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 export default function CustomPlan() {
   return (
@@ -272,6 +274,8 @@ export default function CustomPlan() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

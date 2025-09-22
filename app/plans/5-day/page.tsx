@@ -16,26 +16,13 @@ import {
   Crown,
 } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 export default function FiveDayPlan() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5 text-amber-600" />
-              <span className="text-amber-600 hover:text-amber-700">返回首页</span>
-            </Link>
-            <div className="flex items-center space-x-2">
-              <Crown className="h-6 w-6 text-amber-600" />
-              <span className="text-xl font-bold text-gray-900">5天高端之旅</span>
-            </div>
-            <Button className="bg-amber-600 hover:bg-amber-700 text-white">立即预订</Button>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="relative h-[400px] bg-gradient-to-r from-amber-50 to-red-50">
@@ -44,24 +31,24 @@ export default function FiveDayPlan() {
           <div className="max-w-2xl">
             <Badge className="bg-gradient-to-r from-amber-600 to-orange-600 text-white mb-4">
               <Crown className="h-3 w-3 mr-1" />
-              高端定制
+              Premium Customized
             </Badge>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">5天高端中华文化深度之旅</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">5-Day Premium Chinese Culture In-Depth Journey</h1>
             <p className="text-lg text-gray-700 mb-6">
-              四大目的地全覆盖，五星级奢华体验，专属定制服务，为您打造最难忘的中华文化之旅
+              Complete coverage of four destinations, five-star luxury experience, exclusive customized service, creating the most unforgettable Chinese cultural journey for you
             </p>
             <div className="flex items-center space-x-6 text-sm text-gray-600">
               <div className="flex items-center">
                 <Clock className="h-4 w-4 mr-1" />
-                5天4夜
+                5 Days 4 Nights
               </div>
               <div className="flex items-center">
                 <Users className="h-4 w-4 mr-1" />
-                私人小团
+                Private Small Group
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-1" />
-                浙江·江西
+                Zhejiang · Jiangxi
               </div>
             </div>
           </div>
@@ -376,6 +363,8 @@ export default function FiveDayPlan() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

@@ -32,23 +32,23 @@ export default function ThreeDayPlan() {
         <div className="absolute inset-0 bg-[url('/yiwu-international-trade-city-modern-buildings.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl">
-            <Badge className="bg-amber-600 text-white mb-4">经典推荐</Badge>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">3天经典中华文化之旅</h1>
+            <Badge className="bg-amber-600 text-white mb-4">Classic Recommended</Badge>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">3-Day Classic Chinese Culture Journey</h1>
             <p className="text-lg text-gray-700 mb-6">
-              精选义乌国际商贸城和横店影视城两大核心景点，适合初次体验中华文化的家庭旅行
+              Selected Yiwu International Trade City and Hengdian Film Studios, two core attractions, perfect for families experiencing Chinese culture for the first time
             </p>
             <div className="flex items-center space-x-6 text-sm text-gray-600">
               <div className="flex items-center">
                 <Clock className="h-4 w-4 mr-1" />
-                3天2夜
+                3 Days 2 Nights
               </div>
               <div className="flex items-center">
                 <Users className="h-4 w-4 mr-1" />
-                2-6人小团
+                2-6 Person Small Group
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-1" />
-                浙江省
+                Zhejiang Province
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function ThreeDayPlan() {
       {/* Itinerary */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">详细行程安排</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Detailed Itinerary</h2>
 
           <div className="space-y-8">
             {/* Day 1 */}
@@ -66,9 +66,9 @@ export default function ThreeDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第1天
+                    Day 1
                   </Badge>
-                  抵达义乌 - 商贸文化初体验
+                  Arrive in Yiwu - First Trade Culture Experience
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -78,8 +78,8 @@ export default function ThreeDayPlan() {
                       <Car className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">09:00 接机服务</h4>
-                      <p className="text-xs text-gray-600">专车接机，前往酒店办理入住</p>
+                      <h4 className="font-semibold text-sm">09:00 Airport Pickup</h4>
+                      <p className="text-xs text-gray-600">Private car pickup, proceed to hotel for check-in</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -87,8 +87,8 @@ export default function ThreeDayPlan() {
                       <Building2 className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">14:00 义乌国际商贸城</h4>
-                      <p className="text-xs text-gray-600">参观世界最大小商品市场</p>
+                      <h4 className="font-semibold text-sm">14:00 Yiwu International Trade City</h4>
+                      <p className="text-xs text-gray-600">Visit the world's largest small commodity market</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -96,14 +96,14 @@ export default function ThreeDayPlan() {
                       <Utensils className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">18:00 欢迎晚宴</h4>
-                      <p className="text-xs text-gray-600">品尝地道浙江菜</p>
+                      <h4 className="font-semibold text-sm">18:00 Welcome Dinner</h4>
+                      <p className="text-xs text-gray-600">Taste authentic Zhejiang cuisine</p>
                     </div>
                   </div>
                 </div>
                 <div className="bg-amber-50 p-4 rounded-lg">
-                  <h5 className="font-semibold text-sm mb-2">住宿安排</h5>
-                  <p className="text-sm text-gray-700">义乌四星级商务酒店，位置便利，设施完善</p>
+                  <h5 className="font-semibold text-sm mb-2">Accommodation</h5>
+                  <p className="text-sm text-gray-700">Yiwu 4-star business hotel, convenient location, complete facilities</p>
                 </div>
               </CardContent>
             </Card>
@@ -113,9 +113,9 @@ export default function ThreeDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第2天
+                    Day 2
                   </Badge>
-                  横店影视城 - 穿越古今体验
+                  Hengdian Film Studios - Journey Through Ancient and Modern Times
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -125,8 +125,8 @@ export default function ThreeDayPlan() {
                       <Car className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">08:00 前往横店</h4>
-                      <p className="text-xs text-gray-600">舒适大巴，约1.5小时车程</p>
+                      <h4 className="font-semibold text-sm">08:00 Depart to Hengdian</h4>
+                      <p className="text-xs text-gray-600">Comfortable bus, approximately 1.5 hours journey</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -134,8 +134,8 @@ export default function ThreeDayPlan() {
                       <Camera className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">10:00 明清宫苑</h4>
-                      <p className="text-xs text-gray-600">体验古装拍摄，观看表演</p>
+                      <h4 className="font-semibold text-sm">10:00 Ming & Qing Palace</h4>
+                      <p className="text-xs text-gray-600">Experience costume photography, watch performances</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -143,14 +143,14 @@ export default function ThreeDayPlan() {
                       <Star className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">15:00 秦王宫</h4>
-                      <p className="text-xs text-gray-600">参观宏伟建筑群</p>
+                      <h4 className="font-semibold text-sm">15:00 Qin King Palace</h4>
+                      <p className="text-xs text-gray-600">Visit magnificent architectural complex</p>
                     </div>
                   </div>
                 </div>
                 <div className="bg-amber-50 p-4 rounded-lg">
-                  <h5 className="font-semibold text-sm mb-2">特色体验</h5>
-                  <p className="text-sm text-gray-700">免费古装体验拍照，专业摄影师服务</p>
+                  <h5 className="font-semibold text-sm mb-2">Special Experience</h5>
+                  <p className="text-sm text-gray-700">Free costume photography experience, professional photographer service</p>
                 </div>
               </CardContent>
             </Card>
@@ -160,9 +160,9 @@ export default function ThreeDayPlan() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Badge variant="outline" className="mr-3">
-                    第3天
+                    Day 3
                   </Badge>
-                  文化体验 - 温馨送别
+                  Cultural Experience - Warm Farewell
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -172,8 +172,8 @@ export default function ThreeDayPlan() {
                       <Star className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">09:00 文化工坊</h4>
-                      <p className="text-xs text-gray-600">亲手制作传统手工艺品</p>
+                      <h4 className="font-semibold text-sm">09:00 Cultural Workshop</h4>
+                      <p className="text-xs text-gray-600">Hands-on traditional handicraft making</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -181,8 +181,8 @@ export default function ThreeDayPlan() {
                       <Utensils className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">12:00 告别午餐</h4>
-                      <p className="text-xs text-gray-600">特色农家菜体验</p>
+                      <h4 className="font-semibold text-sm">12:00 Farewell Lunch</h4>
+                      <p className="text-xs text-gray-600">Special farmhouse cuisine experience</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -190,8 +190,8 @@ export default function ThreeDayPlan() {
                       <Car className="h-4 w-4 text-amber-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sm">14:00 送机服务</h4>
-                      <p className="text-xs text-gray-600">专车送至机场或车站</p>
+                      <h4 className="font-semibold text-sm">14:00 Airport Transfer</h4>
+                      <p className="text-xs text-gray-600">Private car to airport or train station</p>
                     </div>
                   </div>
                 </div>
@@ -207,33 +207,33 @@ export default function ThreeDayPlan() {
           <div className="grid lg:grid-cols-3 gap-8">
             <Card className="bg-white">
               <CardHeader>
-                <CardTitle>价格包含</CardTitle>
+                <CardTitle>Price Includes</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-green-500 mr-2" />
-                    全程四星级酒店住宿
+                    4-star hotel accommodation throughout
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-green-500 mr-2" />
-                    专业导游全程陪同
+                    Professional guide throughout
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-green-500 mr-2" />
-                    所有景点门票
+                    All attraction tickets
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-green-500 mr-2" />
-                    接送机服务
+                    Airport transfer service
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-green-500 mr-2" />
-                    旅游意外保险
+                    Travel accident insurance
                   </li>
                   <li className="flex items-center">
                     <Star className="h-4 w-4 text-green-500 mr-2" />
-                    6餐（3早3正）
+                    6 meals (3 breakfasts, 3 main meals)
                   </li>
                 </ul>
               </CardContent>
@@ -243,15 +243,15 @@ export default function ThreeDayPlan() {
               <PayPalCheckout
                 amount="288.80"
                 currency="USD"
-                planName="3天经典中华文化之旅"
+                planName="3-Day Classic Chinese Culture Journey"
                 planDetails={[
-                  "义乌国际商贸城 + 横店影视城",
-                  "四星级酒店住宿（2晚）",
-                  "专业导游全程陪同",
-                  "所有景点门票",
-                  "接送机服务",
-                  "旅游意外保险",
-                  "6餐（3早3正）"
+                  "Yiwu International Trade City + Hengdian Film Studios",
+                  "4-star hotel accommodation (2 nights)",
+                  "Professional guide throughout",
+                  "All attraction tickets",
+                  "Airport transfer service",
+                  "Travel accident insurance",
+                  "6 meals (3 breakfasts, 3 main meals)"
                 ]}
                 onSuccess={handlePaymentSuccess}
                 onError={handlePaymentError}

@@ -16,35 +16,22 @@ import {
   MessageCircle,
 } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 export default function PricingPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5 text-amber-600" />
-              <span className="text-amber-600 hover:text-amber-700">返回首页</span>
-            </Link>
-            <div className="flex items-center space-x-2">
-              <Star className="h-6 w-6 text-amber-600" />
-              <span className="text-xl font-bold text-gray-900">价格与服务</span>
-            </div>
-            <Button className="bg-amber-600 hover:bg-amber-700 text-white">立即咨询</Button>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="relative h-[300px] bg-gradient-to-r from-amber-50 to-red-50">
         <div className="absolute inset-0 bg-[url('/chinese-traditional-architecture-with-mountains.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="max-w-2xl">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">透明价格，优质服务</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Transparent Pricing, Premium Service</h1>
             <p className="text-lg text-gray-700">
-              我们提供清晰透明的价格体系和全方位的专业服务，让您的中华文化之旅物超所值
+              We provide clear and transparent pricing system and comprehensive professional services, making your Chinese cultural journey excellent value for money
             </p>
           </div>
         </div>
@@ -460,6 +447,8 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

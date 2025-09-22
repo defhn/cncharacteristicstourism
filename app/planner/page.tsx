@@ -22,6 +22,8 @@ import {
   Check,
 } from "lucide-react"
 import Link from "next/link"
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 interface Destination {
   id: string
